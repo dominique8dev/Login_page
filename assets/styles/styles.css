@@ -1,13 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
 *{
     margin: 0;
     padding: 0;
 }
 
 body{
-    background: url("/assets/images/background.jpeg");
+    background: url("/assets/images/green-background.avif");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position:center;
+    font-family: 'Share Tech Mono', monospace;
+}
+.title{
+    text-align: center;
 }
 main{
     display: flex;
@@ -17,16 +23,48 @@ main{
 }
 .container{
     background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     color: #dadada;
-    width: 750px;
+    width: 400px;
+    border-radius: 25px;
+    padding: 50px;
 }
 .form-content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    padding: 10px;
+}
+
+
+.username, .password, .remember-me{
+    margin: 15px 0;
+}
+.username{
+    width: 100%;
+}
+input[type="text"], input[type="password"]{
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 15px 10px;
+    /* border-radius: 25px; */
+    border: none;
+    border-bottom: 2px solid #dadada;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #dadada;
+}
+
+::placeholder{
+    color: #dadada;
+}
+.btn{
+    border: none;
+    padding: 12px 32px;
+    background-color: rgba( 0, 0, 0, 0.2);
+    color: #dadada;
+    display: block;
+    margin: 10px auto;
+    font-size: 1.3rem;
+    border-radius: 10px;
+}
+
+.remember-me{
+    font-size: 1.1rem;
 }
